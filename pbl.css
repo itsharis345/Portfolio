@@ -1,0 +1,338 @@
+/* :root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    background-color: white;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+a {
+    color: #4a76ee;
+    text-decoration: none;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a {
+    color: #1a1c20;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: #1a1c20;
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: white;
+    background-color: #1a1c20;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Section Introduction */
+.Intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.Intro .text h2 {
+    font-size: 45px;
+}
+
+.Intro .text .links {
+    margin-top: 25px;
+}
+
+.Intro .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #4a76ee;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.Intro .text .links a:hover {
+    color: #1a1c20;
+    border-color: #1a1c20;
+}
+
+.Intro .text {
+    flex: 5;
+}
+
+.Intro .pic {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.Intro .pic img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+/* Section 2 Skills */
+.Skill {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Skill h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.Skill .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Skill .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Skill .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.Skill .cells .cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.Skill .cells .cell span {
+    font-size: 18px;
+}
+
+/* Section 3 Learning Highlights */
+.Learning {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+}
+
+.Learning h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.Learning .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.Learning .group .text {
+    flex: 8;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #0073b1; /* LinkedIn blue */
+}
+
+.contact-links i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+/* Contact Us Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #4a76ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1a1c20;
+}
+
+.contact-details {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* About us page*/
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #1a1c20;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+#team {
+    padding: 0 50px;
+}
+
+#team h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    color: #1a1c20;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    .Intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Intro .pic img {
+        width: 250px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
